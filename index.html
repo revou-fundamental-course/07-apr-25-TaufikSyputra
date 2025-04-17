@@ -5,11 +5,113 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Website Semikonduktor</title>
-
+        
         <!-- Link ke file CSS eksternal -->
         <link rel="stylesheet" href="C:\Users\TAUFIKS\SEFC1_byRevou\miniproject\07-apr-25-TaufikSyputra\css\style.css">
     </head>
+
     <body>
-        <!--ntar isi-->
+        <!---Header konten-->
+        <header class = "main-header">
+            <!--logo-->
+            <div class = "main-logo"></div>
+            
+            <!--Navigasi-->
+            <nav>
+                <a href= "#Beranda">Beranda</a>
+                <a href= "#Tentang">Tentang</a>
+                <a href= "#Produk">Produk</a>
+                <a href= "#Hubungin_kami">Hubungin kami</a> 
+            </nav>
+        </header>
+        <hr/>
+
+        <!---Konten-->
+        <main>
+            <!--Beranda-->
+            <section id="Beranda">
+                <header>
+                    <h2>Hi _, Welcome</h2>
+                </header>
+
+                <!--Banner konten-->
+                <div class = "banner-img banner-1"></div>
+                <div class = "banner-img banner-2"></div>  
+                <div class = "banner-img banner-3"></div>
+
+                <!--Banner Text-->
+                <article class="section-content">
+                    <p>Perusahaan Semikonduktor pertama di Indonesia</p>
+                </article>
+            </section>
+            
+            <hr />
+
+            <!-- Tentang -->
+            <section id="Tentang">
+                <header>
+                    <h2>Tentang Kami</h2>
+                </header>
+                
+                <!-- isi bagian tentang kami -->
+                <article class="section-content">
+                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                </article>
+            </section>
+            
+            <hr />
+            
+            <!-- Produk -->
+            <section id="Produk">
+                <header>
+                    <h2>Produk Kami</h2>
+                </header>
+
+                <!-- Produk Text -->
+                <article class="section-content">
+                    <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                </article>
+            </section>
+            <hr/>
+            
+            <!-- Hubungin kami -->
+            <section id="Hubungin_kami">
+                <header>
+                    <h2>Hubungin Kami</h2>
+                </heade>
+                
+                <!-- Form hubungin kami -->
+                 <form>
+                    <div>
+                        <label for="name">Name:</label>
+                        <!-- Inputan yang wajib diisi -->
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email:</label>
+                        <!-- Inputan yang wajib diisi -->
+                        <input type="email" id="email" name="email" required>
+                    <div>
+                        
+                    <div>
+                        <label for="message">Pesan:</label>
+                        <!-- Inputan yang wajib diisi -->
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="button" onclick="validateForm()">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        
+        <hr />
+        
+        <!-- Footer konten -->
+        <footer>
+            <span>Made by Taufik</span>
+        </footer>
     </body>
-</html>
+    </html> 
